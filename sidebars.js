@@ -22,16 +22,11 @@ const sidebars = {
     },
   ],
 
-  podpora: [
+  faq: [
     {
       type: 'doc',
       id: 'faq',
       label: '❓ Často kladené otázky',
-    },
-    {
-      type: 'doc',
-      id: 'kontakt',
-      label: '📞 Kontakt',
     },
   ],
 };

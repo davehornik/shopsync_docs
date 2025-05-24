@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/reseni-problemu"
+            to="#"
           >
             🔍 Najít řešení problému
           </Link>
@@ -47,7 +47,7 @@ function HomepageSections() {
             <p>
               Postupy krok za krokem – od nastavení až po složitější scénáře a úpravy napojení.
             </p>
-            <Link to="/docs/navody">Zobrazit návody →</Link>
+            <Link to="/docs/navody/uvod-navody">Zobrazit návody →</Link>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ function HomepageSections() {
             <p>
               Nejčastější chyby při integraci a jejich oprava. Vhodné pro samostatné řešení potíží.
             </p>
-            <Link to="/docs/reseni-problemu">Zobrazit chyby a řešení →</Link>
+            <Link to="/docs/reseni-problemu/">Zobrazit chyby a řešení →</Link>
           </div>
           <div className="col col--6">
             <h2>❓ FAQ</h2>

@@ -76,12 +76,12 @@ themeConfig:
       },
       {
         type: 'docSidebar',
-        sidebarId: 'podpora',
+        sidebarId: 'faq',
         position: 'left',
-        label: 'Podpora',
+        label: 'FAQ',
       },
       {
-        href: 'https://helpdesk.esync.cz/cs/tickets/create/step1',
+        to: '/docs/kontakt',
         label: '📞 Podpora',
         position: 'right',
       },
@@ -92,51 +92,63 @@ themeConfig:
       },
     ],
   },
-      footer: {
-        style: 'dark',
-        links: [
+  footer: {
+    style: 'dark',
+    links: [
+      {
+        title: 'O projektu',
+        items: [  
           {
-            title: 'Obsah',
-            items: [
-              {label: 'Dokumentace', to: '/docs/intro'},
-              {label: 'Návody', to: '/docs/navody/uvod'},
-              {label: 'FAQ', to: '/docs/faq'},
-              {label: 'Kontakt', to: '/docs/kontakt'},
-            ],
+            label: 'Úvod do naší aplikace',
+            to: '/docs/dokumentace', // vede na index dokumentace
           },
           {
-            title: 'Podpora',
-            items: [
-              {
-                label: 'Vytvořit požadavek',
-                href: 'https://helpdesk.esync.cz/cs/tickets/create/step1',
-              },
-              {
-                label: 'Moje tickety',
-                href: 'https://helpdesk.esync.cz/cs/tickets',
-              },
-              {
-                label: 'Sledovat ticket',
-                href: 'https://helpdesk.esync.cz/cs/tickets/track',
-              },
-            ],
+            label: 'Novinky',
+            to: '#', // zatím placeholder
           },
           {
-            title: 'Externí odkazy',
-            items: [
-              {
-                label: 'Hlavní web ShopSync',
-                href: 'https://shopsync.cz',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/davehornik/shopsync_docs',
-              },
-            ],
+            label: 'Smluvní podmínky',
+            href: 'https://shopsync.cz/user_license.pdf',
+          },
+          {
+            label: 'GDPR',
+            to: '#', // bude doplněno
           },
         ],
-        copyright: `© ${new Date().getFullYear()} @davehornik pro ShopSync.`,
       },
+      {
+        title: 'Podpora',
+        items: [
+          {
+            label: 'Vytvořit požadavek',
+            href: 'https://helpdesk.esync.cz/cs/tickets/create/step1',
+          },
+          {
+            label: 'Moje tickety',
+            href: 'https://helpdesk.esync.cz/cs/tickets',
+          },
+          {
+            label: 'Sledovat ticket',
+            href: 'https://helpdesk.esync.cz/cs/tickets/track',
+          },
+        ],
+      },
+      {
+        title: 'Externí odkazy',
+        items: [
+          {
+            label: 'Hlavní web ShopSync',
+            href: 'https://shopsync.cz',
+          },
+          {
+            label: 'GitHub',
+            href: 'https://github.com/davehornik/shopsync_docs',
+          },
+        ],
+      },
+    ],
+    copyright: `© ${new Date().getFullYear()} @davehornik pro ShopSync.`,
+  },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

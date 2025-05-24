@@ -1,0 +1,39 @@
+:root {
+  /* Primární ShopSync barva - tyrkysová/modrozelená */
+  --ifm-color-primary: #00cfa5;
+  --ifm-color-primary-dark: #00b894;
+  --ifm-color-primary-darker: #00a183;
+  --ifm-color-primary-darkest: #008a72;
+  --ifm-color-primary-light: #33d9b8;
+  --ifm-color-primary-lighter: #66e3cb;
+  --ifm-color-primary-lightest: #99eddf;
+
+  /* Světlé pozadí a text */
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #f9f9f9;
+  --ifm-footer-color: #333333;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] {
+  /* Primární barvy v tmavším tónu, zachované brandové */
+  --ifm-color-primary: #00e6b3;
+  --ifm-color-primary-dark: #00cfa5;
+  --ifm-color-primary-darker: #00b894;
+  --ifm-color-primary-darkest: #009f83;
+  --ifm-color-primary-light: #33f0c6;
+  --ifm-color-primary-lighter: #66f5d7;
+  --ifm-color-primary-lightest: #99fae8;
+
+  /* Tmavé pozadí s jemným nádechem petrolejové */
+  --ifm-background-color: #0f1f23;
+  --ifm-navbar-background-color: #0f1f23;
+  --ifm-footer-background-color: #111e25;
+  --ifm-footer-color: #cccccc;
+
+  --ifm-font-color-base: #dddddd;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}

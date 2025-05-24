@@ -45,38 +45,53 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'ShopSync',
-        logo: {
-          alt: 'ShopSync logo',
-          src: 'img/logo.png',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Dokumentace',
-          },
-          {to: '/docs/navody/uvod', label: 'Návody', position: 'left'},
-          {to: '/docs/faq', label: 'FAQ', position: 'left'},
-          {to: '/docs/kontakt', label: 'Kontakt', position: 'left'},
-          {
-            href: 'https://helpdesk.esync.cz/cs/tickets/create/step1',
-            label: '📞 Podpora',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/davehornik/shopsync_docs',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+themeConfig:
+/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+({
+  image: 'img/docusaurus-social-card.jpg',
+  navbar: {
+    title: 'ShopSync',
+    logo: {
+      alt: 'ShopSync logo',
+      src: 'img/logo.png',
+    },
+    items: [
+      {
+        type: 'docSidebar',
+        sidebarId: 'dokumentace',
+        position: 'left',
+        label: 'Dokumentace',
       },
+      {
+        type: 'docSidebar',
+        sidebarId: 'navody',
+        position: 'left',
+        label: 'Návody',
+      },
+      {
+        type: 'docSidebar',
+        sidebarId: 'reseniProblemu',
+        position: 'left',
+        label: 'Řešení problémů',
+      },
+      {
+        type: 'docSidebar',
+        sidebarId: 'podpora',
+        position: 'left',
+        label: 'Podpora',
+      },
+      {
+        href: 'https://helpdesk.esync.cz/cs/tickets/create/step1',
+        label: '📞 Podpora',
+        position: 'right',
+      },
+      {
+        href: 'https://github.com/davehornik/shopsync_docs',
+        label: 'GitHub',
+        position: 'right',
+      },
+    ],
+  },
       footer: {
         style: 'dark',
         links: [

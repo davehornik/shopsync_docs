@@ -1,7 +1,9 @@
 ---
-id: uvod
+id: uvod-navody
 title: Úvod do návodů
 sidebar_position: 1
 ---
 
-> Tato sekce bude obsahovat praktické návody pro uživatele.
+Návody slouží jako praktické průvodce pro obsluhu a nastavení systému ShopSync.
+
+📘 Obsah se bude rozšiřovat o konkrétní příklady napojení, úprav, exportů i pravidelných operací.

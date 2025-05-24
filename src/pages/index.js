@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="/docs/reseni-problemu"
           >
             🔍 Najít řešení problému
           </Link>
@@ -40,36 +40,31 @@ function HomepageSections() {
               Podrobný popis funkcí, napojení a konfigurace aplikace ShopSync.
               Ideální pro vývojáře i správce e-shopu.
             </p>
-            <Link to="/docs/intro">Přejít do dokumentace →</Link>
+            <Link to="/docs/dokumentace">Přejít do dokumentace →</Link>
           </div>
           <div className="col col--6">
-            <h2>🛠️ Návody a řešení problémů</h2>
+            <h2>🛠️ Návody</h2>
             <p>
-              Postupy krok za krokem, jak vyřešit běžné i méně obvyklé situace.
-              Od propojení s Pohodou až po úpravy ceníků.
+              Postupy krok za krokem – od nastavení až po složitější scénáře a úpravy napojení.
             </p>
-            <Link to="/docs/navody/uvod">Zobrazit návody →</Link>
+            <Link to="/docs/navody">Zobrazit návody →</Link>
           </div>
         </div>
 
         <div className="row margin-top--lg">
+          <div className="col col--6">
+            <h2>🧯 Řešení problémů</h2>
+            <p>
+              Nejčastější chyby při integraci a jejich oprava. Vhodné pro samostatné řešení potíží.
+            </p>
+            <Link to="/docs/reseni-problemu">Zobrazit chyby a řešení →</Link>
+          </div>
           <div className="col col--6">
             <h2>❓ FAQ</h2>
             <p>
               Nejčastější otázky a odpovědi – pro nové i pokročilé uživatele.
             </p>
             <Link to="/docs/faq">Prohlédnout FAQ →</Link>
-          </div>
-          <div className="col col--6">
-            <h2>📞 Kontakt na podporu</h2>
-            <p>
-              Pokud nenajdete odpověď v dokumentaci, jsme tu pro vás.
-              <br />
-              <strong>Telefon:</strong> +420 776 357 361
-              <br />
-              <strong>Email:</strong> podpora@shopsync.cz
-            </p>
-            <Link to="/docs/kontakt">Další možnosti kontaktu →</Link>
           </div>
         </div>
       </div>

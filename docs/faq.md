@@ -1,6 +1,9 @@
 ---
 id: faq
 title: Často kladené otázky
+sidebar_position: 98
 ---
 
-> Tady najdete odpovědi na nejčastější dotazy.
+Tato sekce obsahuje nejčastější dotazy, které dostáváme od uživatelů ShopSync. Odpovědi jsou stručné a praktické.
+
+> FAQ se průběžně rozšiřuje na základě reálných případů z praxe.

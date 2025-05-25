@@ -29,11 +29,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/davehornik/shopsync_docs',
+          //editUrl: 'https://github.com/davehornik/shopsync_docs',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/davehornik/shopsync_docs',
+          //editUrl: 'https://github.com/davehornik/shopsync_docs',
           feedOptions: {
             type: ['rss', 'atom'],
           },

@@ -82,11 +82,8 @@
   color: #ec4899; /* růžová */
 }
 /* Inline code */
-code {
-  background-color: #00d49f;
-  color: #f8f8f2;
-  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
+[data-theme='light'] code {background-color: #00d49f; color: #f8f8f2; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;}
+[data-theme='dark'] code {background-color: #00d49f; color: #000000; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;}
 
 /* Syntax elements */
 .token.comment {

@@ -37,3 +37,96 @@
   --ifm-font-color-base: #dddddd;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
+
+/* 🎨 Code block kontejner */
+.theme-code-block {
+  background-color: #111827 !important; /* nebo barvu podle tebe */
+}
+
+/* 💬 Vlastní barvy syntaxe – dle Prism.js tokenů */
+.theme-code-block .token.comment,
+.theme-code-block .token.prolog,
+.theme-code-block .token.doctype,
+.theme-code-block .token.cdata {
+  color: #6b7280; /* šedá */
+}
+
+.theme-code-block .token.punctuation {
+  color: #9ca3af;
+}
+
+.theme-code-block .token.property,
+.theme-code-block .token.tag,
+.theme-code-block .token.constant,
+.theme-code-block .token.symbol {
+  color: #f59e0b; /* žlutá/oranžová */
+}
+
+.theme-code-block .token.selector,
+.theme-code-block .token.attr-name,
+.theme-code-block .token.string,
+.theme-code-block .token.char,
+.theme-code-block .token.builtin {
+  color: #10b981; /* zelená */
+}
+
+.theme-code-block .token.keyword {
+  color: #3b82f6; /* modrá */
+}
+
+.theme-code-block .token.function {
+  color: #8b5cf6; /* fialová */
+}
+
+.theme-code-block .token.number {
+  color: #ec4899; /* růžová */
+}
+/* Inline code */
+code {
+  background-color: #00d49f;
+  color: #f8f8f2;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Syntax elements */
+.token.comment {
+  color: #75715e;
+}
+.token.keyword {
+  color: #f92672;
+}
+.token.string {
+  color: #e6db74;
+}
+.token.function {
+  color: #66d9ef;
+}
+/* 🎯 Přímé přepsání stylu pro Prism codeblock (víceřádkové bloky) */
+/* 🌞 Světlé téma */
+[data-theme='light'] pre[class*="language-"] {
+  background-color: #caffe9 !important; /* světle šedá / bílá */
+  color: #ffffff !important; /* tmavě modrošedá (např. Tailwind slate-800) */
+}
+
+/* 🌚 Tmavé téma */
+[data-theme='dark'] pre[class*="language-"] {
+  background-color: #0f1f23 !important; /* např. inkoustově modrá */
+  color: #006eff !important; /* světlý text */
+}
+/* 🌞 Světlé téma */
+[data-theme='light'] .token.comment    { color: #64748b; }  /* slate-500 */
+[data-theme='light'] .token.keyword    { color: #3b82f6; }  /* blue-500 */
+[data-theme='light'] .token.string     { color: #10b981; }  /* emerald-500 */
+[data-theme='light'] .token.function   { color: #a855f7; }  /* purple-500 */
+[data-theme='light'] .token.number     { color: #ec4899; }  /* pink-500 */
+[data-theme='light'] .token.punctuation { color: #334155; } /* slate-700 */
+[data-theme='light'] .token.plain       {color: #1e293b; } /* např. slate-800 */
+
+/* 🌚 Tmavé téma */
+[data-theme='dark'] .token.comment    { color: #94a3b8; }  /* slate-400 */
+[data-theme='dark'] .token.keyword    { color: #60a5fa; }  /* blue-400 */
+[data-theme='dark'] .token.string     { color: #34d399; }  /* emerald-400 */
+[data-theme='dark'] .token.function   { color: #c084fc; }  /* purple-400 */
+[data-theme='dark'] .token.number     { color: #f472b6; }  /* pink-400 */
+[data-theme='dark'] .token.punctuation { color: #cbd5e1; } /* slate-200 */
+[data-theme='dark'] .token.plain      {color: #ececec; } /* např. slate-100 */

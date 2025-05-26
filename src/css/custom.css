@@ -192,3 +192,11 @@
   color: #ddd;
   margin-top: 0.75rem;
 }
+
+/* Skryje to otravné "Details" přidávané přes ::before */
+details.details_lbgF[open] > summary::before {
+  content: none !important;
+}
+details.details_lbgF > summary::before {
+  content: none !important;
+}

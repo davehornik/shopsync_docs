@@ -2,26 +2,25 @@
 title: poznámky k formátování etc.
 description: poznámky k pár věcem
 ---
-
 # 🧠 Admonitions (barevné bloky)
 
-:::tip Tip
+:::tip Tip <code>:::tip</code>
 Pokud máte více e-shopů propojených s jedním ERP, doporučujeme vytvořit samostatný konfigurační profil pro každý z nich.
 :::
 
-:::danger Varování
+:::danger Varování <code>:::danger</code>
 Tato operace vymaže všechny nespárované objednávky z databáze. Před pokračováním se ujistěte, že máte zálohu!
 :::
 
-:::caution Upozornění
+:::caution Upozornění <code>:::caution</code>
 Ujistěte se, že server má správně nastavené časové pásmo, jinak mohou být časy objednávek posunuté.
 :::
 
-:::info Informace
+:::info Informace <code>:::info</code>
 Nová verze ShopSync 3.2.1 přináší podporu pro dvoufázovou autentifikaci a přímý export faktur.
 :::
 
-:::note Poznámka
+:::note Poznámka <code>:::note</code>
 Všechny cesty v konfiguračních souborech musí být absolutní. Relativní cesty nejsou podporovány na serverových instalacích.
 :::
 
@@ -48,25 +47,48 @@ import TabItem from '@theme/TabItem';
 
 ---
 
+# 🗂️ Tabs – Automatické skupinové záložky
+
+Krok 1.
+<Tabs groupId="operating-systems">
+  <TabItem value="Shoptet" label="Shoptet">Use Ctrl + C to copy.</TabItem>
+  <TabItem value="Presta" label="Presta">Use Command + C to copy.</TabItem>
+</Tabs>
+Krok 2.
+<Tabs groupId="operating-systems">
+  <TabItem value="Shoptet" label="Shoptet">Use Ctrl + V to paste.</TabItem>
+  <TabItem value="Presta" label="Presta">Use Command + V to paste.</TabItem>
+  </Tabs>
+Krok 3.
+<Tabs groupId="operating-systems">
+  <TabItem value="Shoptet" label="Shoptet">Use Ctrl + V to paste.</TabItem>
+  <TabItem value="Presta" label="Presta">Use Command + V to paste.</TabItem>
+</Tabs>
+
+---
 # 📂 Collapsible bloky (rozbalovací sekce)
 
 <details>
 <summary>📁 Krok 3 – Rozšířené nastavení</summary>
 
-Zde můžete:
+Text k hlavnímu kroku...
 
-- Upravit 
-- Cokoliv
-- Tě
-- Napadne
-
+<details>
+<summary>🔧 3. A – Nastavení barev</summary>
+Zde upravíte barvy rozhraní...
 </details>
 
+<details>
+<summary>🔧 3.B – Nastavení barev</summary>
+Zde upravíte barvy rozhraní...
+</details>
+
+</details>
 ---
 
 # 📁 Výpis souborů / struktury
 
-```bash title="Struktura složek"
+```bash
 Shopsync/
 ├── config.php
 ├── index.js

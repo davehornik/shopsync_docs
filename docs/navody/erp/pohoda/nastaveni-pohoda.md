@@ -13,7 +13,7 @@ Tento návod vám pomůže s konfigurací aplikace ShopSync pro propojení s ú�
 
 ### Pokud přihlašování probíhá pomocí Windows uživatele:
 
-```
+```js
 Driver={SQL Server Native Client 11.0};Server=SERVER\POHODA;Database=StwPh_98765432_2013;
 Trusted_Connection=yes;MARS_Connection=yes
 ```

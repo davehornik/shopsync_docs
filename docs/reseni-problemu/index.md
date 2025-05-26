@@ -1,9 +1,13 @@
 ---
 id: problemy-index
-title: Rozcestník
+title: — Rozcestník
 sidebar_position: 0
 ---
 
-Tato sekce popisuje případy, kdy se nespustí most, nevytvoří se XML, nebo dojde k chybě připojení.
+:::info
+Tato stránka slouží jako rozcestník pro různé možné problémy které mohou nastat.
 
-🔧 Doporučený postup diagnostiky bude rozdělen podle typu chyby a typu e-shopu.
+**« Vyberte v postranním menu konkrétní problém pro další pokračování.**
+
+Nebo využijte vyhledávání na hlavní stránce
+:::

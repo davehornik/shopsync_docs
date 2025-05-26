@@ -22,6 +22,7 @@ function HomepageHeader() {
             to="#"
           >
             🔍 Najít řešení problému
+            (placeholder)
           </Link>
         </div>
       </div>
@@ -31,7 +32,7 @@ function HomepageHeader() {
 
 function HomepageSections() {
   return (
-    <section className="margin-top--xl margin-bottom--xl">
+    <section className="margin-top--xl margin-bottom--xl homepage-sections">
       <div className="container">
         <div className="row">
           <div className="col col--6">

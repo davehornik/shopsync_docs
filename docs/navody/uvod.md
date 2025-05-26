@@ -1,9 +1,13 @@
 ---
 id: uvod-navody
-title: Úvod do návodů
-sidebar_position: 1
+title: — Rozcestník
+sidebar_position: 0
 ---
+ 
+:::info
+Tato stránka slouží jako rozcestník pro různé účetní programy a e-shop platformy.
 
-Návody slouží jako praktické průvodce pro obsluhu a nastavení systému ShopSync.
+**« Vyberte v postranním menu konkrétní návod pro další pokračování.**
 
-📘 Obsah se bude rozšiřovat o konkrétní příklady napojení, úprav, exportů i pravidelných operací.
+Nebo využijte vyhledávání na hlavní stránce
+:::

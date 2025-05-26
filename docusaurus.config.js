@@ -120,15 +120,15 @@ themeConfig:
         title: 'Podpora',
         items: [
           {
-            label: 'Vytvořit požadavek',
+            label: 'Vytvořit požadavek na podporu',
             href: 'https://helpdesk.esync.cz/cs/tickets/create/step1',
           },
           {
-            label: 'Moje tickety',
+            label: 'Moje požadavky',
             href: 'https://helpdesk.esync.cz/cs/tickets',
           },
           {
-            label: 'Sledovat ticket',
+            label: 'Sledovat požadavek',
             href: 'https://helpdesk.esync.cz/cs/tickets/track',
           },
         ],

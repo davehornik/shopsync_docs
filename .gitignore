@@ -21,3 +21,4 @@ yarn-debug.log*
 yarn-error.log*
 start.bat
 package-lock.json
+start _server.bat

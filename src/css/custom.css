@@ -13,9 +13,15 @@
   --ifm-navbar-background-color: #ffffff;
   --ifm-footer-background-color: #f9f9f9;
   --ifm-footer-color: #333333;
+  /*--ifm-font-size-base: 17px;*/
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+}
+
+.homepage-sections p {
+  font-size: 1.11rem;
+  line-height: 1.6;
 }
 
 [data-theme='dark'] {
@@ -125,78 +131,3 @@
 [data-theme='dark'] .token.number     { color: #f472b6; }  /* pink-400 */
 [data-theme='dark'] .token.punctuation { color: #cbd5e1; } /* slate-200 */
 [data-theme='dark'] .token.plain      {color: #ececec; } /* např. slate-100 */
-
-/* NASTAVENÍ SPECIALNĚ PRO FAQ */
-
-.faq-item {
-  border: 1px solid;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-[data-theme='light'] .faq-item {
-  border-color: rgb(0, 195, 255);
-  background-color: rgb(235, 249, 253);
-}
-[data-theme='dark'] .faq-item {
-  border-color: rgba(0, 255, 255, 0.308);
-  background-color: rgb(25, 60, 71);
-}
-
-.faq-summary {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none;
-}
-
-.faq-arrow {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-right: 0.3rem;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid #00ffff;
-  transform: rotate(-90deg);
-  transition: transform 200ms ease;
-}
-
-/* otočí šipku dolů */
-.faq-item.open .faq-arrow {
-  transform: rotate(0deg);
-}
-
-.faq-number {
-  font-weight: bold;
-  color: #00ffff;
-  min-width: 1rem;
-  text-align: right;
-}
-
-.faq-title {
-  flex: 1;
-  white-space: normal;
-}
-
-.faq-content {
-  overflow: hidden;
-  transition: all 220ms ease;
-  color: #ddd;
-  margin-top: 0.75rem;
-}
-
-/* Skryje to otravné "Details" přidávané přes ::before */
-details.details_lbgF[open] > summary::before {
-  content: none !important;
-}
-details.details_lbgF > summary::before {
-  content: none !important;
-}

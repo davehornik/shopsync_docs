@@ -131,3 +131,19 @@
 [data-theme='dark'] .token.number     { color: #f472b6; }  /* pink-400 */
 [data-theme='dark'] .token.punctuation { color: #cbd5e1; } /* slate-200 */
 [data-theme='dark'] .token.plain      {color: #ececec; } /* např. slate-100 */
+
+.theme-doc-markdown img {
+  cursor: zoom-in;
+}
+.markdown img {
+  max-width: 600px;
+  height: auto;
+  cursor: zoom-in;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .markdown img {
+    width: 75%;
+  }
+}

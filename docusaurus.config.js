@@ -34,7 +34,7 @@ plugins: [
       },
     },
   ],
-  
+
   function logZoomPluginStart() {
     return {
       name: 'log-zoom-plugin',
@@ -51,7 +51,7 @@ plugins: [
     };
   },
 ],
-  clientModules: [require.resolve('./src/zoom.js')],
+//  clientModules: [require.resolve('./src/zoom.js')],
   presets: [
     [
       'classic',

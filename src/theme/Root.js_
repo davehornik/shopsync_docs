@@ -1,0 +1,32 @@
+
+import React, {useEffect} from 'react';
+import Layout from '@theme/Layout';
+import mediumZoom from 'medium-zoom';
+
+export default function Root({children}) {
+  useEffect(() => {
+    const applyZoom = () => {
+      mediumZoom('article img:not(em img)', {
+        margin: 24,
+        background: 'rgba(0, 0, 0, 0.85)',
+        scrollOffset: 0,
+      });
+      console.log('🔁 mediumZoom aktivován (DOM updated)');
+    };
+
+    const observer = new MutationObserver(() => {
+      applyZoom();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
+    applyZoom();
+
+    return () => observer.disconnect();
+  }, []);
+
+  return <Layout>{children}</Layout>;
+}

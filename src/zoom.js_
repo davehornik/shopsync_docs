@@ -1,0 +1,19 @@
+
+import mediumZoom from 'medium-zoom';
+import {useLocation} from '@docusaurus/router';
+import {useEffect} from 'react';
+
+export default function () {
+  const location = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      mediumZoom('article img:not(em img)', {
+        margin: 24,
+        background: 'rgba(0, 0, 0, 0.85)',
+        scrollOffset: 0,
+      });
+      console.log('🔁 mediumZoom znovu aktivován na', location.pathname);
+    }, 300);
+  }, [location]);
+}

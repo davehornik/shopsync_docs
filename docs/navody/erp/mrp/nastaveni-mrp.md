@@ -1,27 +1,20 @@
 ---
 id: nastaveni-mrp
-title: Nastavení pro propojení MRP
+title: Základní nastavení
 sidebar_position: 0
----
-### Návod obsahuje
-
-*Obecné pokyny, Nastavení připojení k databázi MRP, Příklad správně vyplněného nastavení*
-
 ---
 
 ## Obecné pokyny
 
-**Párování produktů**
+:::info Párování produktů
 Produkty se párují v základním nastavení **podle čísla karty**. Tento údaj lze upravit úpravou v přenosových skriptech.
 V případě potřeby nás kontaktujte na [podpora@shopsync.cz](mailto:podpora@shopsync.cz)
-
-**Databázový ovladač**
+:::
+:::caution Databázový ovladač
 Aby propojení fungovalo, je třeba mít nainstalovaný databázový **ovladač pro přístup k dBase databázi**.
 Obvykle je předinstalovaný, ale pokud chybí, můžete ho doinstalovat např. zde:
 [Distribuovatelný databázový stroj Microsoft Access 2016](https://www.microsoft.com/cs-cz/download/details.aspx?id=54920&msockid=010bf52cded26ad13f82e0e9df906b2c)
-
-**Návody**
-Další informace o napojení na konkrétní e-shop naleznete v příslušném návodu.
+:::
 
 ---
 

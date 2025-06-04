@@ -1,19 +1,12 @@
 ---
 id: mrpks-nastaveni
-title: Nastavení propojení MRP K/S
+title: Základní nastavení
 sidebar_position: 1
 ---
 
-## Přehled
-
-Tento návod obsahuje:
-
-- Obecné pokyny
-- Nastavení autonomního režimu
-- Vyplnění údajů k připojení
-- Příklad správně vyplněného nastavení
-
----
+:::info Tento návod obsahuje:
+Obecné pokyny, nastavení autonomního režimu, vyplnění údajů pro připojení, ukázka vyplněného nastavení.
+:::
 
 ## Obecné pokyny
 
@@ -28,10 +21,6 @@ Příklad příkazu pro spuštění:
 ```bash
 "C:\Program Files (x86)\MRP\DEMO\MRPKS\MRPKS.EXE" -A -F2 -Ymrpdba,mrpdba
 ```
-
-**Další návody**  
-Informace o napojení na konkrétní e-shop naleznete v odpovídajícím návodu.
-
 ---
 
 ## Nastavení autonomního režimu

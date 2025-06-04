@@ -3,7 +3,7 @@ id: nove-sazby-dph-slovensko
 title: Nové DPH Slovensko 2025
 sidebar_position: 3
 ---
-:::info Tento návod se týká pouze slovenských firem.
+:::caution Tento návod se týká pouze slovenských firem.
 :::
 
 Pokud fakturujete na Slovensko v rámci OSS režimu nebo máte druhou registraci k DPH, stačí na e-shopu a v účetním systému správně nastavit sazby. Změna konfigurace aplikace je nutná jen v určitých případech.

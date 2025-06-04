@@ -1,14 +1,14 @@
 ---
 sidebar_position: 1
-title: Nastavení propojení s MoneyS3
+title: Základní nastavení
 description: Nastavení Money S3
 ---
 
 # Nastavení pro propojení se SW MoneyS3
 
-**Návod obsahuje:**  
+:::info Návod obsahuje:
 Obecné pokyny, nastavení e-shop konektoru, propojení s MoneyS3 a příklady správné konfigurace.
-
+:::
 ---
 
 ## Obecné pokyny

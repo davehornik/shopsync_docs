@@ -3,9 +3,9 @@ id: cswautomatic-nastaveni
 title: Nastavení modulu CSWAutomatic pro import do Money
 sidebar_label: Nastavení CSWAutomatic
 ---
-
+:::info
 Tento návod slouží ke správnému nastavení importu objednávek z XML souborů pomocí modulu `CSWAutomatic` ve Money S4/S5.
-
+:::
 ---
 
 ## 1️⃣ Zkontrolujte, zda běží služba *CSWAutomatic*

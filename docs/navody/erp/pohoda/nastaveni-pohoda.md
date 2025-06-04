@@ -1,13 +1,13 @@
 ---
 id: pohoda-nastaveni
-title: Nastavení Pohody
+title: Základní nastavení
 sidebar_position: 1
 ---
 
 # Nastavení Pohoda
-
+:::info
 Tento návod vám pomůže s konfigurací aplikace ShopSync pro propojení s účetním systémem **Pohoda**.
-
+:::
 ---
 
 ## Karta „Připojení k IS“

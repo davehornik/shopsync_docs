@@ -6,7 +6,9 @@ sidebar_position: 1
 
 # Změna databáze (nový rok) – Pohoda
 
+:::info
 Tento návod slouží pro přepnutí databáze ve chvíli, kdy začíná nový účetní rok v systému Pohoda.
+:::
 
 ## Kde změnit nastavení
 

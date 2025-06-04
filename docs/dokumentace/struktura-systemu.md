@@ -3,8 +3,9 @@ title: Struktura systému
 description: Technický přehled fungování aplikace ShopSync
 ---
 
-> *Tento dokument slouží jako technický přehled fungování aplikace ShopSync a může být užitečný pro správce systému, vývojáře i technickou podporu zákazníka.*
-
+:::info
+Tento dokument slouží jako technický přehled fungování aplikace ShopSync a může být užitečný pro správce systému, vývojáře i technickou podporu zákazníka.
+:::
 ## 🔄 Jak probíhá synchronizace dat
 
 1. **Plánování přenosu**  

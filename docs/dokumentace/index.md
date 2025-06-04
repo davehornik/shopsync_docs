@@ -6,10 +6,9 @@ sidebar_position: 0
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-#### **ShopSync** je nástroj pro automatizovanou synchronizaci dat mezi ERP systémem a vaším e-shopem.
-
-#### Umožňuje hladký přenos informací jako jsou produkty, objednávky, skladové zásoby či zákaznická data mezi oběma systémy bez nutnosti ručního zásahu.
-
+:::tip **ShopSync** je nástroj pro automatizovanou synchronizaci dat mezi ERP systémem a vaším e-shopem.
+Umožňuje hladký přenos informací jako jsou produkty, objednávky, skladové zásoby či zákaznická data mezi oběma systémy bez nutnosti ručního zásahu.
+:::
 ---
 
 ## 🔄 Co naše aplikace umí

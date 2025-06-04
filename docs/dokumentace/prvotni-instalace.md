@@ -1,41 +1,85 @@
 ---
+id: implementace-nasazeni
 title: Konzultace a prvotní instalace
-description: Průběh nasazení propojení mezi e-shopem a ERP
 ---
-## Průběh nasazení propojení a výběr typu klientaailsai
 
-Implementace propojení mezi e-shopem a ERP probíhá v několika fázích:
+# Implementace a nasazení propojení
 
-### 1. Analýza potřeb zákazníka
+:::info
+Implementace a nasazení propojení u zákazníka probíhá formou jednotlivých fází.  
+Zde je přehled, co můžete po objednávce očekávat a co vše je zahrnuto v ceně řešení.
+:::
 
-- Určení přenášených dat a chování aplikace
-- Volba typu klienta:
-  - **Desktop klient** – Pohoda, Money, Helios, MRP
-  - **Web klient** – Abra Flexi, Abra Gen, Premier, Duel
+## 🧩 1. Analýza potřeb zákazníka
 
-### 2. Individuální úpravy na míru
+Formou konzultace (telefonické, e-mailové nebo vzdálené) nebo náhledem do dat účetního systému či e-shopu zjistíme:
 
-- V ceně je hodina úprav (např. mapování, filtrování dat)
-- Další práce dle domluvy
+- jaká data je potřeba přenášet,
+- jak má synchronizace fungovat,
+- jaké typy propojení budou využity.
 
-### 3. Dodání softwaru
+> Cílem je definovat konkrétní rozsah a požadavky na propojení.
 
-- Zákazník obdrží desktop/web klienta a dokumentaci
+---
 
-### 4. Instalace
+## 🛠️ 2. Individuální úpravy
 
-- Instalace probíhá vzdáleně (TeamViewer/RDP)
-- Možnost testovacího prostředí
+Součástí ceny jsou:
 
-### 5. Odzkoušení
+- úpravy typického propojení do **rozsahu jedné hodiny práce**,
+- obvyklé mapování polí, přizpůsobení identifikátorů, názvů, skladových polí atd.
 
-- Kontrola správného fungování
-- Případné úpravy dle požadavků
+:::caution Nad rámec
+Složitější úpravy (např. víceúrovňové párování, vlastní exportní formáty) se účtují **samostatně po domluvě**.
+:::
 
-### 6. Základní zaškolení
+---
 
-- Ukázka ovládání aplikace, logování, plánování
+## 📦 3. Dodání software
 
-### 7. Technická podpora
+Po potvrzení připravenosti propojení:
 
-- Základní technická podpora je součástí služby
+- zašleme odkaz ke stažení programu,
+- dodáme dokumentaci pro nastavení a používání,
+- přístup je standardně poskytován přes náš server (např. shopsync.cz/download/...).
+
+---
+
+## ⚙️ 4. Instalace a nasazení
+
+V ceně je zahrnuta:
+
+- instalace software,
+- první spuštění a konfigurace propojení.
+
+Toto probíhá **vzdáleně** standartně prostřednictvím [TeamVieweru](https://www.teamviewer.com/cs/download/windows/) či Vzdálené plochy ([RDP](https://support.microsoft.com/cs-cz/windows/jak-pou%C5%BE%C3%ADvat-vzd%C3%A1lenou-plochu-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)).
+
+> V případě potřeby lze nejprve zprovoznit na testovacím prostředí.
+
+---
+
+## ✅ 5. Odzkoušení propojení
+
+Po prvním spuštění společně:
+
+- otestujeme přenos produktů, objednávek, zákazníků apod.,
+- zkontrolujeme logy a odpovídající zápis v systému e-shopu i ERP,
+- případně upravíme nastavení podle připomínek zákazníka.
+
+---
+
+## 👨‍🏫 6. Základní zaškolení
+
+Součástí dodávky je:
+
+- zaškolení v ovládání programu,
+- vysvětlení nastavení automatického spouštění (např. CRON/Task Scheduler),
+- v případě zakázkových úprav také dohodnutý způsob uložení dat (např. v Pohodě nebo Money S3).
+
+---
+
+## 🛟 7. Technická podpora
+
+Po předání je k dispozici základní technická podpora dle rozsahu uvedeného v sekci [Podpora](https://shopsync.cz/podpora.html).
+
+> Například pomoc při reinstalaci, podpora při aktualizaci e-shopu nebo ERP systému, dohled nad chybovými hláškami.

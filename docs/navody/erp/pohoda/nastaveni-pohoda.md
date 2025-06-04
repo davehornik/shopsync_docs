@@ -1,3 +1,9 @@
+---
+id: pohoda-nastaveni
+title: Nastavení Pohody
+sidebar_position: 1
+---
+
 # Nastavení Pohoda
 
 Tento návod vám pomůže s konfigurací aplikace ShopSync pro propojení s účetním systémem **Pohoda**.

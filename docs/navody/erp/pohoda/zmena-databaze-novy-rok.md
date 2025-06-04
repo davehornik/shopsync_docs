@@ -1,3 +1,9 @@
+---
+id: pohoda-novy-rok
+title: Změna databáze - Nový úč. rok
+sidebar_position: 1
+---
+
 # 📂 Změna databáze (nový rok) – Pohoda
 
 Tento návod slouží pro přepnutí databáze ve chvíli, kdy začíná nový účetní rok v systému Pohoda.

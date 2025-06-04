@@ -1,58 +1,83 @@
-# Nové sazby DPH na Slovensku
+---
+id: nove-sazby-dph-slovensko
+title: Nové DPH Slovensko 2025
+sidebar_position: 3
+---
+:::info Tento návod se týká pouze slovenských firem.
+:::
 
-Tento návod je určen pouze pro **slovenské firmy**.
+Pokud fakturujete na Slovensko v rámci OSS režimu nebo máte druhou registraci k DPH, stačí na e-shopu a v účetním systému správně nastavit sazby. Změna konfigurace aplikace je nutná jen v určitých případech.
 
-Pokud pouze fakturujete na Slovensko v rámci OSS režimu nebo máte druhou registraci k DPH, postačí nastavit správně sazby v e-shopu a účetním softwaru.
+Pokud používáte Prestashop, WooCommerce nebo OpenCart, vznikne vám nová daňová třída – její ID je potřeba upravit podle instrukcí v sekci níže.
 
 ---
 
-## 🖥️ Desktopová aplikace
+## Nastavení v desktopové aplikaci
 
-### Kde změnit sazby DPH:
+### Nastavení sazeb DPH
 
-1. Spusťte `shopsync.exe`
-2. V hlavním okně přejděte do části **Nastavení účetního SW** nebo **Připojení k IS**
-3. Zadejte nové sazby DPH:
+Otevřete aplikaci ShopSync (obvykle `C:/shopsync/shopsync.exe`).
+Zvolte možnost **Nastavení účetního SW** nebo **Připojení k IS** (záleží na verzi).
 
-- **Základní sazba**: `23`
-- **Snížená sazba**: `19`
-- **Třetí sazba**: `5`
+Zobrazí se konfigurační karta, kde upravte sazby DPH následovně:
 
-![Nastavení sazeb DPH v aplikaci ShopSync](https://helpdesk.esync.cz/en/download/f2d31bf2138639de4d28bd1452c84d42be0b7a7f50e8815ce1c087e2ac3d631b1226fcc8927798d2?t=d3b462fc7c4b2267c4d09323db0b1609)
+- Základní sazba: `23`
+- Snížená sazba: `19`
+- Třetí sazba: `5`
 
-Tyto hodnoty budou následně propsány i do XML souborů zasílaných do Pohody.
+Poté klikněte na **Uložit**.
+
+![](assets/dph1.png)
 
 ---
 
-## 🌐 Webová aplikace
+### Daňové třídy
 
-V souboru `config.php` upravte následující proměnné:
+:::info Tato část je určena hlavně pro Prestashop, WooCommerce, OpenCart, a další platformy, kde dochází k přidání nové daňové třídy.
+:::
+:::warning Pokud používáte Shoptet, Upgates, Base, CreativeSites apod., nemusíte tuto část řešit.
+:::
+V případě změny nebo přidání nové daňové třídy je potřeba:
+
+- V e-shopu vytvořit novou daňovou třídu
+- Upravit konfiguraci ShopSync aplikace a zadat nová ID tříd
+
+Zadejte nová ID zde:
+
+![](assets/dph2.png)
+
+
+
+---
+
+Pokud používáte můstek na FTP (Prestashop, OpenCart, VirtueMart a někdy i WooCommerce), otevřete:
+
+- **Připojení k eshopu / Instalovat můstek na FTP**
+
+A pokud již proběhl přenos dat, doporučuje se:
+
+- **Ovládání / Reset přenosu změn**
+
+---
+
+## Použití při webhostovaném nasazení
+
+V případě, že aplikaci provozujete na vlastním webserveru:
+
+1. Najděte ve složce s aplikací soubor `config.php`
+2. Upravte hodnoty těchto konstant:
 
 ```php
-define("set_vat", 23);
-define("set_vatlow", 19);
-define("set_vatthird", 5);
+define("set_vat", 23);       // Základní DPH
+define("set_vatlow", 19);    // Snížené DPH
+define("set_vatthird", 5);   // Třetí DPH
 ```
 
-![Ukázka nastavení ve webové aplikaci](https://helpdesk.esync.cz/en/download/07edf6fc3d8adce644cf41bcd585c08ab1ad8bfbb2d78a51d4b9096407f54b12d18bcb50306a658b?t=f2e5c6828444ed7d396350d9889b5858)
+3. Pokud vám vznikla nová daňová třída, změňte také ID dané třídy na stejném místě:
 
-> ⚠️ Ujistěte se, že nepřepisujete hodnoty z `.env` nebo z jiného načítaného konfiguračního zdroje.
-
----
-
-## 🛒 Daňové třídy v e-shopu
-
-### Shoptet / Upgates / CreativeSites / Base
-
-- Není třeba upravovat ID daňové třídy, import funguje na základě hodnot z objednávky.
-
-### Prestashop / WooCommerce / Opencart
-
-- V případě změny ID daňové třídy je třeba:
-  - upravit ID daňové třídy v konfiguraci aplikace
-  - upravit nastavení můstku na FTP
-  - případně **spustit reset přenosu změn**
-
----
-
-Máte-li nejasnosti, neváhejte kontaktovat naši podporu: **podpora@shopsync.cz**
+```php
+define("taxclass",'1');       // ID vaší základní sazby
+define("taxclasslow",'2');    // ID snížené sazby
+define("taxclassthird",'');   // ID třetí sazby
+define("taxclassnull",'')     // ID nulové sazby
+```

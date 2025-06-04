@@ -4,11 +4,11 @@ title: Změna databáze - Nový úč. rok
 sidebar_position: 1
 ---
 
-# 📂 Změna databáze (nový rok) – Pohoda
+# Změna databáze (nový rok) – Pohoda
 
 Tento návod slouží pro přepnutí databáze ve chvíli, kdy začíná nový účetní rok v systému Pohoda.
 
-## 🧭 Kde změnit nastavení
+## Kde změnit nastavení
 
 Přejděte do sekce `Nastavení účet. SW`. Zde je třeba změnit:
 
@@ -24,7 +24,7 @@ Po vyplnění klikněte na **Uložit a aktualizovat nastavení**.
 
 ---
 
-## 🔄 Účtování v přechodném období
+## Účtování v přechodném období
 
 Pokud účtujete v přechodném období (například leden před uzavřením roku), nastavte správné období i pro uživatele, přes kterého běží propojení.
 

@@ -7,7 +7,7 @@ Reset přenosu změn slouží k vynucení kompletní synchronizace všech dat me
 :::
 ---
 
-## ✅ Postup krok za krokem:
+## Postup krok za krokem:
 
 **1.** Spusťte aplikaci **ShopSync**.
 

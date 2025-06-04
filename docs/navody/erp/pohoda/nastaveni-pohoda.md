@@ -10,7 +10,7 @@ Tento návod vám pomůže s konfigurací aplikace ShopSync pro propojení s ú�
 
 ---
 
-## 🧭 Karta „Připojení k IS“
+## Karta „Připojení k IS“
 
 1. Vyplňte **IČ** – bez toho nelze importovat do Pohody, správně se nenastaví měna ani sazby DPH.
 2. Vyberte typ Pohody: **Pohoda / SQL / E1**
@@ -26,35 +26,36 @@ Trusted_Connection=yes;MARS_Connection=yes
 
 ### Pokud přihlašování probíhá přes uživatelské jméno a heslo:
 
-```
+```js
 Driver={SQL Server Native Client 11.0};Server=SERVER\POHODA;Database=StwPh_98765432_2013;
 MARS_Connection=yes;Uid=uzivatel;Pwd=heslo
 ```
 
-> ⚠️ Ujistěte se, že máte nainstalovaný správný ODBC ovladač (např. SQL Server Native Client 11.0)
+:::caution Ujistěte se, že máte nainstalovaný správný ODBC ovladač (např. SQL Server Native Client 11.0)
 
+:::
 ---
 
-## 🧰 Další nastavení
+## Další nastavení
 
 - Vyplňte cestu pro **dočasné soubory**, **přílohy** a **obrázky**
 - Uložte nastavení kliknutím na **Uložit a aktualizovat nastavení**
 
 ---
 
-## 🔌 Způsoby platby
+## Způsoby platby
 
 Po načtení údajů z e-shopu klikněte na **Inicializovat nastavení**. Poté spárujte platební metody s odpovídajícími hodnotami v Pohodě. Porovnává se textová hodnota.
 
 ---
 
-## 🚚 Způsoby dopravy
+## Způsoby dopravy
 
 Stejně jako u plateb – nejdříve klikněte na **Inicializovat nastavení**, poté spárujte dopravce s hodnotami v Pohodě.
 
 ---
 
-## 🧾 Zaokrouhlení
+## Zaokrouhlení
 
 Doporučené hodnoty:
 
@@ -64,7 +65,7 @@ Doporučené hodnoty:
 
 ---
 
-## 🌍 OSS (One Stop Shop)
+## OSS (One Stop Shop)
 
 - `oss_hlavni_zeme`: Zadejte zemi, kde má firma sídlo
 - `oss`: Zapnout/vypnout podle potřeby (převod OSS objednávek)
